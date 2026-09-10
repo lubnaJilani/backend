@@ -1,0 +1,537 @@
+
+.main2 {
+    background-color: rgb(238, 238, 149);
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+
+
+.head1 {
+    background-color: rgb(250, 152, 116);
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
+
+
+#para {
+    background-color: rgb(250, 152, 116);
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+
+.head3 {
+    background-color: rgb(250, 152, 116);
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+
+
+.img {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+.abc {
+    width: 40%;
+    height: 150px;
+
+    margin: 15px;
+    padding: 10px;
+
+    border: 3px solid black;
+
+    border-radius: 20px;
+}
+
+
+
+figure {
+    margin: 10px;
+}
+
+
+
+.fig {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+
+
+.fig a {
+    color: cadetblue;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+
+
+#yellow {
+    color: cadetblue;
+}
+
+
+
+
+#red {
+    color: red;
+}
+
+
+.fig a:hover {
+    text-decoration: underline;
+}
+
+/* end of assignment 2 */
+
+
+
+/* begning of assignment 3 */
+
+.container{
+    background-color: rgb(210, 241, 180);
+}
+#tHead{
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#tid{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+th{
+    background-color: aqua;
+}
+#color{
+    background-color: rgb(195, 160, 227);
+}
+caption{
+    color: chocolate;
+    background-color: rgb(252, 188, 105);
+}
+td,th{
+    padding: 9px;
+}
+.total{
+   background-color: lightgreen;
+   color: darkgreen;
+    font-weight: bold; 
+}
+/* end of assignment 3 */
+
+
+
+/* Q4 starts */
+body {
+    background-color: rgb(245, 235, 235);
+    font-family: Arial, sans-serif;
+}
+
+
+
+.Q4 {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+
+#field4 {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    border: 3px solid brown;
+    border-radius: 15px;
+    background-color: rgb(255, 248, 248);
+}
+
+
+
+.callh2 {
+    color: brown;
+    background-color: rgb(230, 214, 214);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+label {
+    color: brown;
+    font-family: cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 60%;
+    height: 30px;
+    margin: 8px;
+    padding: 5px;
+    border: 2px solid brown;
+    border-radius: 6px;
+    background-color: rgb(250, 240, 240);
+}
+
+
+
+.unique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+
+
+
+select {
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid brown;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: rgb(250, 240, 240);
+}
+
+
+
+textarea {
+    width: 60%;
+    height: 120px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid brown;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+
+input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+input[type="reset"] {
+    width: 120px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+input[type="reset"]:hover {
+    background-color: darkred;
+}
+
+
+
+#field4 {
+    position: relative;
+}
+/* end assidnment 4 */
+
+/* start of ass 5 */
+
+#img5 {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+
+
+#head5{
+    text-align: center;
+    color: royalblue;
+    background-color: lightseagreen;
+    width: 100%;
+}
+#para5{
+    color: black;
+    text-align: center;
+
+}
+/* end of assignment 5 */
+
+
+/* start of assignment 6 */
+
+.page6 {
+background-image: url("img1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50rem;
+}
+#N6 {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.a6 {
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+.a6:hover {
+    color: aqua;
+}
+
+#btn{
+    background-color:rgb(67, 48, 48);
+    color: beige;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+}
+#btn1{
+    width: 20%;
+    height: 30px;
+}
+
+
+
+
+
+
+section {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+#main6 {
+    max-width: 850px;
+}
+
+
+
+.h6 {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+
+    margin: 5px 0;
+
+    line-height: 1.1;
+}
+
+
+
+.para6 {
+    max-width: 700px;
+
+    margin: 25px auto;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #e0e0e0;
+}
+
+
+
+.btn6 {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+
+#btn62 {
+    padding: 14px 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background-color: #00d9ff;
+    color: #111;
+
+    transition: 0.3s;
+}
+
+
+
+#btn62:hover {
+    background-color: white;
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+}
+.card3{
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+
+
+}
+
+
+.card1{
+/* border: 1px solid black; */
+width: 33%;
+margin: 20px;
+background-color: bisque;
+border-radius: 20px;
+}
+.h6{
+    background-color: rgb(42, 38, 38);
+    color: aliceblue;
+    
+}
+.p6{
+    color: #111;
+    text-align: center;
+}
+.smallImg{
+    border-radius: 20px;
+    width: 80%;
+    padding: 50px;
+
+}
