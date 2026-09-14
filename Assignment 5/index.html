@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            width: 350px;
+            padding: 25px;
+            border-radius: 25px;
+            background: #1b1b1b;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        #display {
+            width: 100%;
+            height: 80px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            background: #292929;
+            color: white;
+            font-size: 32px;
+            text-align: right;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            height: 60px;
+            border: none;
+            border-radius: 15px;
+            background: #333;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #444;
+            transform: scale(1.04);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .operator {
+            background: #ff9500;
+        }
+
+        .operator:hover {
+            background: #e68900;
+        }
+
+        .clear {
+            background: #e74c3c;
+        }
+
+        .clear:hover {
+            background: #c0392b;
+        }
+
+        .equal {
+            background: #27ae60;
+        }
+
+        .equal:hover {
+            background: #219150;
+        }
+
+        .zero {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <input type="text" id="display" readonly>
+
+        <div class="buttons">
+
+            <!-- First Row -->
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="deleteNumber()">DEL</button>
+            <button onclick="addNumber('%')">%</button>
+            <button onclick="addNumber('/')" class="operator">÷</button>
+
+            <!-- Second Row -->
+            <button onclick="addNumber('7')">7</button>
+            <button onclick="addNumber('8')">8</button>
+            <button onclick="addNumber('9')">9</button>
+            <button onclick="addNumber('*')" class="operator">×</button>
+
+            <!-- Third Row -->
+            <button onclick="addNumber('4')">4</button>
+            <button onclick="addNumber('5')">5</button>
+            <button onclick="addNumber('6')">6</button>
+            <button onclick="addNumber('-')" class="operator">−</button>
+
+            <!-- Fourth Row -->
+            <button onclick="addNumber('1')">1</button>
+            <button onclick="addNumber('2')">2</button>
+            <button onclick="addNumber('3')">3</button>
+            <button onclick="addNumber('+')" class="operator">+</button>
+
+            <!-- Fifth Row -->
+            <button onclick="addNumber('0')" class="zero">0</button>
+            <button onclick="addNumber('.')">.</button>
+            <button onclick="calculate()" class="equal">=</button>
+
+        </div>
+
+    </div>
+
+    <!-- end of assignment 1 -->
+
+
+
+
+    <!-- assignment 3 -->
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
