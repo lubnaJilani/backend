@@ -1,130 +1,109 @@
-let students = ['Ali', 'Sara', 'Ahmed', 'Ayesha', 'Hamza',
-'Sara', 'Bilal'];
+let students = ['Ali', 'Sara', 'Ahmed', 'Ayesha', 'Hamza', 'Sara', 'Bilal'];
 
-if (students.includes('Ayesha')) {
-    console.log('Ayesha is present');
-}
+let isPre = students.includes('Ayesha');
+console.log("Is Ayesha present?", isPre);
 
-let position = students.indexOf('Sara');
-document.write(position + "<br>");
+let fSara = students.indexOf('Sara');
+console.log("First Sara position:", fSara);
 
-let lastPosition = students.lastIndexOf('Sara');
-document.write(lastPosition + "<br>");
+let lSara = students.lastIndexOf('Sara');
+console.log("Last Sara position:", lSara);
 
-let student = students.find(function(name) {
-    return name.startsWith("A");
-});
-document.write(student + "<br>");
+let fA = students.find(student => student.startsWith('A'));
+console.log("First student starting with A:", fA);
 
-let stu = students.findIndex(function(name) {
-    return name.startsWith('A');
-});
-document.write(stu + "<br>");
+let firstAIndex = students.findIndex(student => student.startsWith('A'));
+console.log("Position of first student starting with A:", firstAIndex);
 
-//first asssignment ends
+let laA = students.findLast(student => student.startsWith('A'));
+console.log("Last student starting with A:", laA);
 
-// second assignment starts
+let lastAIndex = students.findLastIndex(student => student.startsWith('A'));
+console.log("Position of last student starting with A:", lastAIndex);
+// ends
 
-
-let price =[1200, 450, 3000, 750, 1500, 250];
-price.sort(function(a,b){
-    return a-b
-})
-document.write(price +"<br>")
-
-price.sort(function(a,b){
-    return b-a
-})
-document.write(price +"<br>")
-
-let price1 =[1200, 450, 3000, 750, 1500, 250];
-
-document.write("Orignal List :" + price1 + '<br>')
-let reverse = price1.reverse()
-document.write("Reverse List :" + reverse + '<br>')
+// /////2nd ass starts
 
 
-let productValue = [1200, 450, 3000, 750, 1500, 250];
-productValue.sort(function(){
-    return Math.random() - 0.5
-})
-document.write(productValue +"<br>")
+let prices = [1200, 450, 3000, 750, 1500, 250];
+
+let lowToHigh = [...prices].sort((a, b) => a - b);
+console.log("Lowest to highest:", lowToHigh);
+
+let highToLow = [...prices].sort((a, b) => b - a);
+console.log("Highest to lowest:", highToLow);
+
+console.log("Original list:", prices);
+
+let reversed = [...prices].reverse();
+console.log("Reversed list:", reversed);
+
+let randomPrices = [...prices].sort(() => Math.random() - 0.5);
+console.log("Random ordering:", randomPrices);
+
+// end
 
 
-// second ends
 
-//third asss starsa
+// star of 3rd ass
 
 let marks = [78, 45, 92, 66, 88, 54, 91, 73];
 
 let secondMarks = [50, 98, 55, 99, 56, 8, 7];
 
 let allMarks = marks.concat(secondMarks);
-
-document.write("Combined Marks: " + allMarks + "<br>");
+console.log(allMarks);
 
 let selectedMarks = allMarks.slice(2, 6);
+console.log(selectedMarks);
 
-document.write("Selected Marks: " + selectedMarks + "<br>");
+allMarks.splice(3, 1, 70);
+console.log(allMarks);
 
-let mark = [78, 45, 92, 66, 88, 54, 91, 73];
+console.log(allMarks.length);
 
-mark.splice(3, 1, 70);
-
-document.write("Changed Marks: " + mark + "<br>");
-
-let markTotal = [78, 45, 92, 66, 88, 54, 91, 73];
-
-let total = markTotal.length;
-
-document.write("Total Marks: " + total + "<br>");
-
-markTotal.sort(function(a, b) {
+allMarks.sort(function(a, b) {
     return a - b;
 });
+console.log(allMarks);
 
-document.write("Sorted Marks: " + markTotal + "<br>");
+allMarks.reverse();
+console.log(allMarks);
 
-markTotal.reverse();
-
-document.write("Reversed Marks: " + markTotal + "<br>");
-
-let showResult = (markTotal) => {
-    document.write("Final Result: " + markTotal);
+let showMarks = (arr) => {
+    console.log(arr);
 };
 
-showResult(markTotal);
-// ends
-
-// /////4th ass starts
+showMarks(allMarks);
+// end 
 
 
-let employ ={
-    employeeId : '01',
-    FirstName : 'Ali',
-    LastName : "Khan",
-    department : "it department",
-    designation : "Full Time",
-    salary : '150000' 
-}
+// 4th assignment 
+let employ = {
+    employeeId: '01',
+    FirstName: 'Ali',
+    LastName: 'Khan',
+    department: 'IT Department',
+    designation: 'Full Time',
+    salary: '150000'
+};
 
-employ.department = "HR Department";
-employ.email = "ali@gmail.com";
-
-
-console.log(employ.FirstName)
-console.log(employ.LastName)
-delete employ.LastName;
-console.log(employ["salary"]);
+console.log(employ.FirstName);
+console.log(employ.department);
 
 console.log(employ["designation"]);
+console.log(employ["salary"]);
 
-// end
+employ.email = "ali@gmail.com";
 
+employ.department = "HR Department";
 
+delete employ.LastName;
 
-// star of 5th ass
+console.log(employ); 
+// Ends
 
+// 5th assignment 
 
 
 let employ = {
@@ -149,9 +128,6 @@ console.log(employ.getFullName());
 console.log(employ.getInfo());
 
 
-
-
-
 let employ2 = {
     employeeId: '02',
     FirstName: 'Sara',
@@ -172,3 +148,5 @@ let employ2 = {
 
 console.log(employ2.getFullName());
 console.log(employ2.getInfo());
+
+// Ends all five
