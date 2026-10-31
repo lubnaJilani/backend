@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="curd.css">
+  <title>Fetch API Practice</title>
+</head>
+<body>
+
+  
+<h1>Fetch API CRUD Practice</h1>
+
+<h3>GET | POST | PUT | PATCH | DELETE</h3>
+
+<button id="reloadBtn">Reload Posts</button>
+
+<p id="loading"></p>
+<p id="message"></p>
+
+<form id="postForm">
+  <input
+    id="title"
+    type="text"
+    placeholder="Post title"
+    required
+  >
+
+  <input
+    id="userId"
+    type="number"
+    placeholder="User ID"
+    min="1"
+    required
+  >
+
+  <textarea
+    id="body"
+    placeholder="Post content"
+    required
+  ></textarea>
+
+  <button type="submit">Add Post</button>
+</form>
+
+<div id="posts"></div>
+
+
+
+
+  <script src="curd.js"></script>
+</body>
+</html>
