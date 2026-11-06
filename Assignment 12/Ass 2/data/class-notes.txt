@@ -1,0 +1,4 @@
+I learned how to use Node.js.
+I learned about the OS module.
+I learned how to create and read files using FS module.
+I learned how to rename and delete files.
