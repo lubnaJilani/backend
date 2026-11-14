@@ -1,10 +1,12 @@
+
 {
   "name": "assignment-13",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Employee Task Management REST API",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"No automated tests configured\""
   },
   "keywords": [],
   "author": "",

@@ -8,6 +8,9 @@ router.get("/", taskController.getAllTasks);
 router.get("/status/:status", taskController.getTasksByStatus);
 router.get("/priority/:priority", taskController.getTasksByPriority);
 router.get("/summary", taskController.getTaskSummary);
+router.get("/employee/:name", taskController.getTasksByEmployee);
+router.get("/overdue", taskController.getOverdueTasks);
+
 router.get("/:id", taskController.getTaskById);
 router.post("/", taskController.createTask);
 router.put("/:id", taskController.updateTask);
