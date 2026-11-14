@@ -18,6 +18,14 @@ const isValidDate = (date) => {
     );
 };
 
+// VALID TASK ID CHECK
+const isValidId = (id) => {
+    return (
+        /^[1-9]\d*$/.test(String(id)) &&
+        Number.isSafeInteger(Number(id))
+    );
+};
+
 // VALIDATION HELPERS
 const validPriorities = ["Low", "Medium", "High"];
 const validStatuses = ["Pending", "In Progress", "Completed"];
@@ -74,6 +82,13 @@ const getAllTasks = (req, res, next) => {
 // GET TASK BY ID
 const getTaskById = (req, res, next) => {
     try {
+        if (!isValidId(req.params.id)) {
+            return res.status(400).json({
+                success: false,
+                message: "Invalid task ID"
+            });
+        }
+
         const task = taskModel.getTaskById(req.params.id);
 
         if (!task) {
@@ -127,6 +142,13 @@ const createTask = (req, res, next) => {
 // PUT - REPLACE ENTIRE TASK
 const updateTask = (req, res, next) => {
     try {
+        if (!isValidId(req.params.id)) {
+            return res.status(400).json({
+                success: false,
+                message: "Invalid task ID"
+            });
+        }
+
         const taskData = req.body || {};
         const validationError = validateTask(taskData);
 
@@ -166,6 +188,13 @@ const updateTask = (req, res, next) => {
 // PATCH - PARTIALLY UPDATE TASK
 const patchTask = (req, res, next) => {
     try {
+        if (!isValidId(req.params.id)) {
+            return res.status(400).json({
+                success: false,
+                message: "Invalid task ID"
+            });
+        }
+
         const allowedFields = [
             "title",
             "description",
@@ -264,6 +293,13 @@ const patchTask = (req, res, next) => {
 // DELETE TASK
 const deleteTask = (req, res, next) => {
     try {
+        if (!isValidId(req.params.id)) {
+            return res.status(400).json({
+                success: false,
+                message: "Invalid task ID"
+            });
+        }
+
         const deletedTask = taskModel.deleteTask(req.params.id);
 
         if (!deletedTask) {
